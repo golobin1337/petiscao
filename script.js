@@ -1,3 +1,13 @@
+// Today's date in urgency bar
+const todayEl = document.getElementById('today-date');
+if (todayEl) {
+  const now = new Date();
+  const dd = String(now.getDate()).padStart(2, '0');
+  const mm = String(now.getMonth() + 1).padStart(2, '0');
+  const yyyy = now.getFullYear();
+  todayEl.textContent = `${dd}/${mm}/${yyyy}`;
+}
+
 // Countdown to midnight
 function updateCountdown() {
   const now = new Date();
