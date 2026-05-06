@@ -6,14 +6,16 @@ function updateCountdown() {
   const diff = midnight - now;
 
   if (diff <= 0) {
-    document.getElementById('countdown').textContent = '00:00:00';
+    const el = document.getElementById('countdown');
+    if (el) el.textContent = '00:00:00';
     return;
   }
 
   const h = Math.floor(diff / 3600000).toString().padStart(2, '0');
   const m = Math.floor((diff % 3600000) / 60000).toString().padStart(2, '0');
   const s = Math.floor((diff % 60000) / 1000).toString().padStart(2, '0');
-  document.getElementById('countdown').textContent = `${h}:${m}:${s}`;
+  const el = document.getElementById('countdown');
+  if (el) el.textContent = `${h}:${m}:${s}`;
 }
 
 updateCountdown();
