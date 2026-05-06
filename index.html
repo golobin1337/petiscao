@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F97316" />
   <title>Petiscos de Boteco — Guia Completo</title>
+  <link rel="preload" as="image" href="public/hero.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,7 +23,7 @@
     <p class="sub">Mais de <span class="hl">160 receitas</span> testadas, com ingredientes simples, prontas em até <span class="hl">15 minutos</span> para você impressionar no dia do futebol, no churrasco ou no encontro de amigos.</p>
 
     <div class="hero-img">
-      <img src="public/hero.jpg" alt="Guia de Petiscos de Boteco" />
+      <img src="public/hero.jpg" alt="Guia de Petiscos de Boteco" fetchpriority="high" />
     </div>
 
     <div class="price-hero">
@@ -84,11 +86,11 @@
     <br><br>
     <div class="indis-fotos">
       <div class="foto-grande">
-        <img src="public/1.jpg" alt="Petiscos de boteco" />
+        <img src="public/1.jpg" alt="Petiscos de boteco" loading="lazy" decoding="async" />
       </div>
       <div class="fotos-menores">
-        <img src="public/2.jpg" alt="Petisco 2" />
-        <img src="public/3.jpg" alt="Petisco 3" />
+        <img src="public/2.jpg" alt="Petisco 2" loading="lazy" decoding="async" />
+        <img src="public/3.jpg" alt="Petisco 3" loading="lazy" decoding="async" />
       </div>
     </div>
 
@@ -124,7 +126,7 @@
 
     <div class="recipes-grid">
       <div class="recipe-card">
-        <div class="recipe-thumb"><img src="public/frango.jpg" alt="Frango Crocante" /></div>
+        <div class="recipe-thumb"><img src="public/frango.jpg" alt="Frango Crocante" loading="lazy" decoding="async" /></div>
         <div class="recipe-body">
           <h3>Frango Crocante de Boteco</h3>
           <div class="recipe-meta">
@@ -135,7 +137,7 @@
         </div>
       </div>
       <div class="recipe-card">
-        <div class="recipe-thumb"><img src="public/queijo.jpg" alt="Queijo Coalho" /></div>
+        <div class="recipe-thumb"><img src="public/queijo.jpg" alt="Queijo Coalho" loading="lazy" decoding="async" /></div>
         <div class="recipe-body">
           <h3>Queijo Qualho Econômico</h3>
           <div class="recipe-meta">
@@ -146,7 +148,7 @@
         </div>
       </div>
       <div class="recipe-card">
-        <div class="recipe-thumb"><img src="public/calabresa.jpg" alt="Calabresa" /></div>
+        <div class="recipe-thumb"><img src="public/calabresa.jpg" alt="Calabresa" loading="lazy" decoding="async" /></div>
         <div class="recipe-body">
           <h3>Calabresa Deliciosa na Airfryer</h3>
           <div class="recipe-meta">
@@ -157,7 +159,7 @@
         </div>
       </div>
       <div class="recipe-card">
-        <div class="recipe-thumb"><img src="public/pastel.jpg" alt="Pastel" /></div>
+        <div class="recipe-thumb"><img src="public/pastel.jpg" alt="Pastel" loading="lazy" decoding="async" /></div>
         <div class="recipe-body">
           <h3>Pastel Crocante de Carne</h3>
           <div class="recipe-meta">
@@ -168,7 +170,7 @@
         </div>
       </div>
       <div class="recipe-card">
-        <div class="recipe-thumb"><img src="public/medalhao.jpg" alt="Medalhão de Mandioca" /></div>
+        <div class="recipe-thumb"><img src="public/medalhao.jpg" alt="Medalhão de Mandioca" loading="lazy" decoding="async" /></div>
         <div class="recipe-body">
           <h3>Espeto de Medalhão de Mandioca</h3>
           <div class="recipe-meta">
@@ -179,7 +181,7 @@
         </div>
       </div>
       <div class="recipe-card">
-        <div class="recipe-thumb"><img src="public/camarao.jpg" alt="Camarão Empanado" /></div>
+        <div class="recipe-thumb"><img src="public/camarao.jpg" alt="Camarão Empanado" loading="lazy" decoding="async" /></div>
         <div class="recipe-body">
           <h3>Camarão Empanado de Bar</h3>
           <div class="recipe-meta">
@@ -211,7 +213,7 @@
     <div class="bonus-grid">
       <div class="bonus-item">
         <div class="bvalue"><div class="de">R$47,00</div><div class="gratis">GRÁTIS</div></div>
-        <div class="bicon"><img src="public/molhos.jpg" alt="Molhos e Temperos" /></div>
+        <div class="bicon"><img src="public/molhos.jpg" alt="Molhos e Temperos" loading="lazy" decoding="async" /></div>
         <br>
         <div class="binfo">
           <h3>Molhos e Temperos que Viciam</h3>
@@ -220,7 +222,7 @@
       </div>
       <div class="bonus-item">
         <div class="bvalue"><div class="de">R$20,00</div><div class="gratis">GRÁTIS</div></div>
-        <div class="bicon"><img src="public/fritura.jpg" alt="Fritura Sem Medo" /></div>
+        <div class="bicon"><img src="public/fritura.jpg" alt="Fritura Sem Medo" loading="lazy" decoding="async" /></div>
         <br>
         <div class="binfo">
           <h3>Fritura Sem Medo: O Método Crocante</h3>
@@ -229,7 +231,7 @@
       </div>
       <div class="bonus-item">
         <div class="bvalue"><div class="de">R$37,00</div><div class="gratis">GRÁTIS</div></div>
-        <div class="bicon"><img src="public/petisco.jpg" alt="Petisco Congelado" /></div>
+        <div class="bicon"><img src="public/petisco.jpg" alt="Petisco Congelado" loading="lazy" decoding="async" /></div>
         <br>
         <div class="binfo">
           <h3>Petisco Congelado: Faça Hoje, Sirva Quando Quiser</h3>
@@ -238,7 +240,7 @@
       </div>
       <div class="bonus-item">
         <div class="bvalue"><div class="de">R$37,00</div><div class="gratis">GRÁTIS</div></div>
-        <div class="bicon"><img src="public/tabua.jpg" alt="Tábua de Boteco" /></div>
+        <div class="bicon"><img src="public/tabua.jpg" alt="Tábua de Boteco" loading="lazy" decoding="async" /></div>
         <br>
         <div class="binfo">
           <h3>Como Montar uma Tábua de Boteco Irresistível</h3>
@@ -265,7 +267,7 @@
 
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar"><img src="public/mulher1.jpg" alt="Ana Paula M." /></div>
+          <div class="t-avatar"><img src="public/mulher1.jpg" alt="Ana Paula M." loading="lazy" decoding="async" /></div>
           <div class="t-meta"><span class="t-name">Ana Paula M.</span><span class="t-time">2h</span></div>
           <span class="t-dots">···</span>
         </div>
@@ -278,7 +280,7 @@
 
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar"><img src="public/homem1.jpg" alt="Carlos R." /></div>
+          <div class="t-avatar"><img src="public/homem1.jpg" alt="Carlos R." loading="lazy" decoding="async" /></div>
           <div class="t-meta"><span class="t-name">Carlos R.</span><span class="t-time">5h</span></div>
           <span class="t-dots">···</span>
         </div>
@@ -291,7 +293,7 @@
 
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar"><img src="public/mulher2.jpg" alt="Fernanda L." /></div>
+          <div class="t-avatar"><img src="public/mulher2.jpg" alt="Fernanda L." loading="lazy" decoding="async" /></div>
           <div class="t-meta"><span class="t-name">Fernanda L.</span><span class="t-time">1d</span></div>
           <span class="t-dots">···</span>
         </div>
@@ -304,7 +306,7 @@
 
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar"><img src="public/homem2.jpg" alt="Ricardo S." /></div>
+          <div class="t-avatar"><img src="public/homem2.jpg" alt="Ricardo S." loading="lazy" decoding="async" /></div>
           <div class="t-meta"><span class="t-name">Ricardo S.</span><span class="t-time">1d</span></div>
           <span class="t-dots">···</span>
         </div>
@@ -317,7 +319,7 @@
 
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar"><img src="public/homem3.jpg" alt="João Victor T." /></div>
+          <div class="t-avatar"><img src="public/homem3.jpg" alt="João Victor T." loading="lazy" decoding="async" /></div>
           <div class="t-meta"><span class="t-name">João Victor T.</span><span class="t-time">2d</span></div>
           <span class="t-dots">···</span>
         </div>
@@ -330,7 +332,7 @@
 
       <div class="testimonial">
         <div class="t-header">
-          <div class="t-avatar"><img src="public/mulher3.jpg" alt="Mariana C." /></div>
+          <div class="t-avatar"><img src="public/mulher3.jpg" alt="Mariana C." loading="lazy" decoding="async" /></div>
           <div class="t-meta"><span class="t-name">Mariana C.</span><span class="t-time">3d</span></div>
           <span class="t-dots">···</span>
         </div>
@@ -429,7 +431,7 @@
 <section id="garantia">
   <div class="container">
     <div class="garantia-inner">
-      <div class="garantia-badge"><img src="public/30dias.png" alt="Garantia 30 dias" /></div>
+      <div class="garantia-badge"><img src="public/30dias.png" alt="Garantia 30 dias" loading="lazy" decoding="async" /></div>
       <div class="garantia-text">
         <h2>Garantia incondicional de 30 Dias.</h2>
         <p>Testou e não gostou? Devolvemos seu dinheiro sem burocracia! Você tem 30 dias para experimentar e, se não for pra você, basta pedir o reembolso. O risco é 100% nosso, você não tem nada a perder. Experimente com total tranquilidade.</p>
@@ -528,6 +530,6 @@
   </p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
