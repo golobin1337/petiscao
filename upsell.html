@@ -64,12 +64,15 @@
       padding: 28px 28px 20px;
       text-align: center;
       border-bottom: 1px solid #F3F4F6;
-      position: relative;
+    }
+    .price-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 6px;
     }
     .save-tag {
-      position: absolute;
-      top: 28px;
-      right: 20px;
       background: #DCFCE7;
       color: #15803D;
       font-size: 0.7rem;
@@ -78,12 +81,12 @@
       padding: 5px 10px;
       border-radius: 8px;
       text-transform: uppercase;
+      white-space: nowrap;
     }
     .price-from {
       font-size: 1rem;
       color: #9CA3AF;
       text-decoration: line-through;
-      margin-bottom: 4px;
     }
     .price-main {
       display: flex;
@@ -207,8 +210,10 @@
 
   <!-- PRICE -->
   <div class="price-section">
-    <div class="save-tag">ECONOMIZE R$4,00</div>
-    <div class="price-from">De R$ 19,90</div>
+    <div class="price-top-row">
+      <div class="price-from">De R$ 19,90</div>
+      <div class="save-tag">ECONOMIZE R$4,00</div>
+    </div>
     <div class="price-main">
       <span class="price-rs">R$</span>
       <span class="price-num">15</span>
