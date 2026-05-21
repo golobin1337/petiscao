@@ -1,3 +1,17 @@
+// ── GLOBAL REDIRECT — preserva todos os parâmetros da URL (UTM, fbclid, gclid…)
+function redirectWithParams(destination) {
+  var currentParams = window.location.search;
+  if (!currentParams) {
+    window.location.href = destination;
+    return;
+  }
+  if (destination.indexOf('?') !== -1) {
+    window.location.href = destination + '&' + currentParams.substring(1);
+  } else {
+    window.location.href = destination + currentParams;
+  }
+}
+
 // Today's date in urgency bar
 const todayEl = document.getElementById('today-date');
 if (todayEl) {

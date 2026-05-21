@@ -196,6 +196,20 @@
       text-transform: uppercase;
     }
   </style>
+  <script>
+    function redirectWithParams(destination) {
+      var currentParams = window.location.search;
+      if (!currentParams) {
+        window.location.href = destination;
+        return;
+      }
+      if (destination.indexOf('?') !== -1) {
+        window.location.href = destination + '&' + currentParams.substring(1);
+      } else {
+        window.location.href = destination + currentParams;
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -241,11 +255,11 @@
 
   <!-- CTA -->
   <div class="cta-section">
-    <a href="https://mundoconhecimento.mycartpanda.com/checkout/210012036:1" class="btn-accept">
+    <a href="https://mundoconhecimento.mycartpanda.com/checkout/210012036:1" class="btn-accept" onclick="event.preventDefault(); redirectWithParams('https://mundoconhecimento.mycartpanda.com/checkout/210012036:1')">
       QUERO O PLANO COMPLETO<br>COM DESCONTO
     </a>
 
-    <a href="https://mundoconhecimento.mycartpanda.com/checkout/209973657:1" class="decline">
+    <a href="https://mundoconhecimento.mycartpanda.com/checkout/209973657:1" class="decline" onclick="event.preventDefault(); redirectWithParams('https://mundoconhecimento.mycartpanda.com/checkout/209973657:1')">
       Não, obrigado. Quero continuar com o plano básico de R$9,90
     </a>
   </div>
