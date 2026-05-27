@@ -174,12 +174,13 @@ h1, h2, h3 { line-height: 1.25; }
 .trust-badges {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 10px;
+  flex-wrap: nowrap;
   margin-top: 14px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--dark2);
   font-weight: 600;
+  white-space: nowrap;
 }
 .hero-img {
   margin: 16px auto;
