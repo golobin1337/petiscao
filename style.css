@@ -151,7 +151,7 @@ h1, h2, h3 { line-height: 1.25; }
   margin: 0 auto 32px;
 }
 .price-hero {
-  margin: 28px 0;
+  margin: 12px 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
