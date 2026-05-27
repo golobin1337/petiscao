@@ -123,7 +123,7 @@ h1, h2, h3 { line-height: 1.25; }
 #hero {
   background: linear-gradient(160deg, #FFF7ED 0%, #FFEDD5 60%, #FFF7ED 100%);
   color: var(--dark);
-  padding: 70px 0 60px;
+  padding: 24px 0 32px;
   text-align: center;
 }
 #hero .eyebrow {
@@ -182,8 +182,8 @@ h1, h2, h3 { line-height: 1.25; }
   font-weight: 600;
 }
 .hero-img {
-  margin: 24px auto;
-  max-width: 380px;
+  margin: 16px auto;
+  max-width: 320px;
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -679,7 +679,7 @@ footer a { color: #9CA3AF; text-decoration: none; }
   content-visibility: auto;
   contain-intrinsic-size: 0 700px;
 }
-.hero-img { aspect-ratio: 4 / 3; }
+.hero-img { aspect-ratio: 4 / 3; max-height: 260px; }
 .foto-grande img { aspect-ratio: 16 / 9; }
 
 /* ── DIVIDER ── */
